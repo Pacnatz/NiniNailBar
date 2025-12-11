@@ -1,0 +1,100 @@
+/* Color Palette inspired by Nini Nail Bar & Chanel */
+:root {
+  /* Primary Colors */
+  --color-primary: #F5E6E8;      /* Soft pink */
+  --color-secondary: #1A1A1A;    /* Elegant black */
+  --color-accent: #D4A5A5;       /* Rose */
+  --color-gold: #D4AF37;         /* Luxury gold */
+  
+  /* Neutral Colors */
+  --color-cream: #FAF8F5;        /* Warm cream */
+  --color-beige: #E8DDD3;        /* Soft beige */
+  --color-gray: #6B6B6B;         /* Medium gray */
+  --color-light-gray: #F0F0F0;   /* Light gray */
+  
+  /* Text Colors */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6B6B6B;
+  --color-text-light: #FFFFFF;
+  
+  /* Fonts */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
